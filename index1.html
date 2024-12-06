@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary Sayang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #FFFF0;
+        }
+        h2 {
+            color: #FFFF0;
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #FF1493;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #FF1493;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Anniversary❤️ Yang Ke-8</h1>
+    <h2>Happy anniversary sayang, aku bersyukur banget bisa kenal kamu sejauh ini, kamu orang baik yg selalu sabar ngadepin semua hal tentang aku pdhl aku sering egois dan gabisa ngertiin keadaan kmu, but to be honest aku nyaman ngobrol sama kamu, obrolan random kita yg selalu bikin aku nyaman bareng kamu.
+    Terimakasih untuk waktu, perasaan, tenaga kamu yg masih tulus mau sayangin aku yg banyak kurangnya dan masih mau nerima aku:)aku gamau berharap banyak tapi aku mau Kita sama" kuat yaa jalanin hubungan ini, because kamu sumber bahagia aku, dan akan selalu menjadi bahagia aku.
+    <p>Sekali lagi aku berterimakasih sama kmu udah kuat ngejalanin hubungan yg sejauh ini bersama aku, dan udah setia dlm hubungan kita aku berharap kmu tidak berpaling dari aku.aminn
+    <p>Makasih Ya Sayang Sehat" Kamu
+    </p>
+    <img src="gambar.jpg" alt="Foto Lucu" id="fotoLucu">
+    <p>I Love You❤️🐣
+    <br>
+    <button id="toggleMusic">Putar Lagu</button>
+    <audio id="laguTema" loop>
+        <source src="sempurna.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+    <script>
+        const toggleMusicButton = document.getElementById('toggleMusic');
+        const laguTema = document.getElementById('laguTema');
+
+        toggleMusicButton.addEventListener('click', () => {
+            if (laguTema.paused) {
+                laguTema.play();
+                toggleMusicButton.textContent = "Pause Lagu";
+            } else {
+                laguTema.pause();
+                toggleMusicButton.textContent = "Putar Lagu";
+            }
+        });
+    </script>
+</body>
+</html>
